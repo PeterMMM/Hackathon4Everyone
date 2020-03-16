@@ -104,6 +104,11 @@ class RegisterController extends BaseController
             $user = Auth::user();
             $success['token'] = $user->createToken('MyApp')->accessToken;
             $success['name'] = $user->name;
+            //if remember me
+            if (isset($request->remember)) {
+                // $user->remember_token = $success['token'];
+                $success['remember_token'] = 'yp_err_string(errorcode)';
+            }
             return $this->sendResponse($success,'User login successfully.');
         } else {
             return $this->sendError('Unauthorised.',['error'=>'Unauthorised']);

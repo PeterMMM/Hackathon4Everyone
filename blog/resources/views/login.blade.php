@@ -136,7 +136,7 @@
                             <input type="password" name="password" class="form-control" placeholder="password">
                         </div>
                         <div class="row align-items-center remember">
-                            <input type="checkbox" name="remember">Remember Me
+                            <input type="checkbox" name="rememberme" value="true">Remember Me
                         </div>
                         <div class="form-group">
                             <input type="submit" value="Login" class="btn float-right login_btn">
@@ -185,6 +185,7 @@
                             $.cookie("userlogintoken", obj.data.token, { expires: date });
                             // $.cookie("userLoginToken",obj.data.token);
                             $.cookie("username",obj.data.name, { expires: date });
+                            window.location.href = '/';
                         }
 
                         console.log("User Info : "+ $.cookie("userlogintoken")+", name : "+$.cookie("username"));

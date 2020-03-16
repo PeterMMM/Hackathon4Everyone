@@ -193,6 +193,7 @@
                                 $.cookie("userlogintoken", obj.data.token, { expires: date });
                                 // $.cookie("userLoginToken",obj.data.token);
                                 $.cookie("username",obj.data.name, { expires: date });
+                                window.location.href = '/';
                             }
 
                             console.log("User Info : "+ $.cookie("userlogintoken")+", name : "+$.cookie("username"));
