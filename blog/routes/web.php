@@ -25,6 +25,11 @@ Route::get('/register', function()
 	return view('register');
 });
 
+Route::get('/detail', function()
+{
+	return view('eventsdetail');
+});
+
 Route::get('/events',function()
 {
 	return view('events',['userName' =>'Peter']);

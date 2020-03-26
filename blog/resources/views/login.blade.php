@@ -22,7 +22,7 @@
             @import url('https://fonts.googleapis.com/css?family=Numans');
 
             html,body{
-            background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+            background-image: url('http://getwallpapers.com/wallpaper/full/9/2/b/36940.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             height: 100%;
@@ -135,9 +135,9 @@
                             </div>
                             <input type="password" name="password" class="form-control" placeholder="password">
                         </div>
-                        <div class="row align-items-center remember">
+                        <!-- <div class="row align-items-center remember">
                             <input type="checkbox" name="rememberme" value="true">Remember Me
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <input type="submit" value="Login" class="btn float-right login_btn">
                         </div>

@@ -7,6 +7,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## REF for detial
+Event detail ui
+https://www.kaggle.com/c/deepfake-detection-challenge/overview
+Build
+Underline
+https://codepen.io/hayzey/pen/LNzwVO
+Tab-card
+https://getbootstrap.com/docs/4.0/components/card/
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
