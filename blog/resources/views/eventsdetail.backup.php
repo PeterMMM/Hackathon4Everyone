@@ -237,54 +237,11 @@
         }
 
 
-        #container{
-            margin-top: 2%;background-color: #FFF;
-            border-radius: 5px;
-            padding: 5px;
-            box-shadow: 0.2px 0.2px gray;
-        }
-
-        #join-now {
-            float: right;
-        }
-
-        #main-title {
-            display: none;
-            position: absolute;
-            right: 2em;
-            font-size: 30px;
-
-            /*for effect*/
-            color: #e0dfdc;
-            /*background: #556677;*/
-            letter-spacing: .1em;
-            text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
-            color: #e0dfdc;
-            /*background: #556677;*/
-            /*end for effect*/
-        }
         /*mobile view*/
         @media only screen and (max-width: 600px) {
             .over-text-cover-img {
                 display: none;
             }
-
-            #main-title {
-                /*display: none;*/
-                position: absolute;
-                left: 2em;
-                font-size: 13px;
-
-                /*for effect*/
-                color: #e0dfdc;
-                /*background: #556677;*/
-                letter-spacing: .1em;
-                text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
-                color: #e0dfdc;
-                /*background: #556677;*/
-                /*end for effect*/
-            }
-
         }
 
 
@@ -328,7 +285,7 @@
             </div>
           </div>
         </nav>
-        <div class="container" id="container">
+        <div class="container" style="margin-top: 2%">
             <!-- http://getwallpapers.com/wallpaper/full/3/7/5/1521426-full-size-geometry-wallpapers-1920x1080-for-android-50.jpg -->
             <!-- <div class="card mb-10">
               <img class="card-img-top" src="http://getwallpapers.com/wallpaper/full/3/7/5/1521426-full-size-geometry-wallpapers-1920x1080-for-android-50.jpg" alt="Card image cap">
@@ -342,109 +299,34 @@
             <div class="card bg-white text-white">
               <img class="card-img" src="{{ asset('img/cover-com.jpg') }}" alt="Card image" id="cover-img">
               <div class="card-img-overlay">
-                <div id="main-title">
-                  Break Down Challage <br>
-                  $1000 Price
-                </div>
                 <div class="over-text-cover-img">
                     <h5 class="card-title" >Challanges for you</h5>
                     <p class="card-text">Identify videos with facial or voice manipulations</p>
                     <p class="card-text"><i class="fas fa-laptop-code"></i> &nbsp; Be ready and take this Break Down Challenge 2020 teams 6 days to go</p>
                 </div>
-
-                      <button class="btn btn-lg btn-info" id="join-now">Join Now</button>
               </div>
-            </div><br>
-            <div>
-                 <nav>
+              <div class="card-body">
+
+                <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Overview</a>
-                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Discussion</a>
-                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Rules</a>
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
                   </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                   <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-2 collapse show d-md-flex bg-light pt-2 pl-0 min-vh-100" id="sidebar">
-                                <ul class="nav flex-column flex-nowrap overflow-hidden">
-                                    <li class="nav-item">
-                                        <a class="nav-link text-truncate" href="#"><i class="fa fa-home"></i> <span class="d-none d-sm-inline">Description</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-truncate" href="#"><i class="fa fa-list"></i> <span class="d-none d-sm-inline">Timeline</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-truncate" href="#"><i class="fa fa-list"></i> <span class="d-none d-sm-inline">Prize</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1"><i class="fa fa-table"></i> <span class="d-none d-sm-inline">Data</span></a>
-                                        <div class="collapse" id="submenu1" aria-expanded="false">
-                                            <ul class="flex-column pl-2 nav">
-                                                <li class="nav-item"><a class="nav-link py-0" href="#"><span>Orders</span></a></li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link collapsed py-1" href="#submenu1sub1" data-toggle="collapse" data-target="#submenu1sub1"><span>Customers</span></a>
-                                                    <div class="collapse" id="submenu1sub1" aria-expanded="false">
-                                                        <ul class="flex-column nav pl-4">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link p-1" href="#">
-                                                                    <i class="fa fa-fw fa-clock-o"></i> Daily </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link p-1" href="#">
-                                                                    <i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link p-1" href="#">
-                                                                    <i class="fa fa-fw fa-bar-chart"></i> Charts </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link p-1" href="#">
-                                                                    <i class="fa fa-fw fa-compass"></i> Areas </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-bar-chart"></i> <span class="d-none d-sm-inline">Requirement</span></a></li>
-                                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class="d-none d-sm-inline">Leaderboard</span></a></li>
-                                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class="d-none d-sm-inline">Getting Start</span></a></li>
-                                    <li class="nav-item"><a class="nav-link text-truncate" href="#"><i class="fa fa-download"></i> <span class="d-none d-sm-inline">Feedback</span></a></li>
-                                </ul>
-                            </div>
-                            <div class="col pt-2">
-                                <h2>
-                                    <a href="" data-target="#sidebar" data-toggle="collapse" class="d-md-none"><i class="fa fa-bars"></i></a> Content </h2>
-                                <h6 class="hidden-sm-down">Shrink page width to see sidebar collapse</h6>
-                                <p>Codeply editor wolf moon retro jean shorts chambray sustainable roof party. Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony ennui twee squid fap selvage. Meggings flannel Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl lumbersexual bicycle rights, viral fap cronut leggings squid chillwave pickled gentrify mustache. 3 wolf moon hashtag church-key Odd Future. Austin messenger bag normcore, Helvetica Williamsburg sartorial tote bag distillery Portland before they sold out gastropub taxidermy Vice.</p>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    Nisi voluptate aliqua irure occaecat elit ea eu consequat est labore veniam ea ea proident magna ea fugiat exercitation aliqua do pariatur mollit aliqua pariatur occaecat adipisicing labore labore eu sunt ut amet dolore sunt esse cupidatat reprehenderit proident consectetur esse ea consequat dolor commodo dolore laborum occaecat cupidatat enim elit aute deserunt occaecat pariatur laborum minim nulla sunt ut dolor officia excepteur ad eiusmod ut qui cillum minim cupidatat veniam pariatur officia aliquip ea nostrud dolor aute laborum ad dolor commodo laborum anim consectetur adipisicing ullamco cupidatat nulla excepteur reprehenderit cupidatat in eiusmod id labore fugiat id duis esse ullamco amet consequat commodo in labore mollit eiusmod sint in officia sint sed irure voluptate excepteur duis ea laboris et laboris irure mollit pariatur dolore eiusmod ut consequat commodo aliquip non minim deserunt est laborum cupidatat id cillum sed nisi occaecat ut sed pariatur ut non ad id voluptate eu irure amet officia eu magna eiusmod dolor quis et eu dolore in id sed esse qui nulla magna reprehenderit sit irure dolor do excepteur aliqua nulla incididunt sunt dolor qui ut dolore mollit nulla irure laborum occaecat eiusmod labore duis et commodo sunt dolore sed incididunt aliquip excepteur consequat ex aute qui magna occaecat culpa aute dolor minim occaecat ea consequat dolor.
-                  </div>
-                  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    Lorem ipsum enim anim sed enim officia sit in dolor est ullamco laborum occaecat dolor nostrud aute voluptate incididunt velit aliquip consectetur ad cupidatat nulla ut adipisicing ullamco dolor et in reprehenderit est fugiat ut id consectetur proident velit cillum cupidatat commodo cillum laboris magna duis aliquip qui laborum consectetur exercitation ad commodo dolor proident irure ullamco laborum fugiat labore laborum cupidatat ullamco sint consectetur in dolore labore anim dolor adipisicing sed anim aliquip aute anim eiusmod dolor laboris dolore consectetur enim velit et minim quis nulla officia ullamco in duis in reprehenderit eiusmod aute est proident veniam sed dolor in esse dolor tempor ea exercitation in culpa eu laborum ea enim reprehenderit velit velit eu proident in cillum sunt quis qui excepteur ut pariatur amet deserunt aute dolore aliquip ut deserunt ea sed consequat duis nisi est nisi in deserunt in laboris mollit nisi tempor exercitation reprehenderit aute ad laboris eiusmod elit do aliqua in excepteur excepteur adipisicing sed irure duis mollit laboris esse ut reprehenderit in nisi quis incididunt pariatur dolore irure quis ut adipisicing ut culpa in exercitation qui ut consequat ex ex anim ad in occaecat aute fugiat dolor quis laboris ullamco culpa proident dolor laborum dolor laboris culpa pariatur occaecat ut in veniam eu officia tempor ut aliquip dolor ad ex laboris nostrud consequat.
-                  </div>
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
                 </div>
+
+              </div>
             </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="{{ asset('js/jquery.cookie.min.js') }}"></script>
 
         <script type="text/javascript">
-
-
-        .nav-link[data-toggle].collapsed:before {
-            content: " ▾";
-        }
-        .nav-link[data-toggle]:not(.collapsed):before {
-            content: " ▴";
-        }
         // window.onload = function() {
         //     if (window.jQuery) {  
         //         // jQuery is loaded  
@@ -510,14 +392,11 @@
             $("#login").hide();
             $('#userName').html($.cookie('username'));
             $('#profile').show();
-            $('#main-title').show(1000);
         } else {
             $("#login").show(1000);
             $("#logout").hide();
             $('#profile').hide();
-            $('#main-title').show(1000);
         }
-
         </script>
 
 
