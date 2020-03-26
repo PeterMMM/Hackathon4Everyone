@@ -18,7 +18,7 @@
         @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
 
         html,body{
-            background-image: url('http://getwallpapers.com/wallpaper/full/c/5/6/25532.jpg');
+            background-image: url('{{ asset('img/cover-event-detail.jpg')  }}');
             background-size: cover;
             background-repeat: repeat;
             height: 100%;
@@ -215,12 +215,43 @@
             }
         }
 
+        #cover-img {
+            
+            height: auto;
+        }
+        .over-text-cover-img {
+            margin-top: 15%;
+        }
+
+        .navbar-nav > li {
+          float: left;
+          position: relative;
+        }
+        .navbar-light .navbar-nav .active a::after {
+          border-bottom: 2px solid #5bc0eb;
+          bottom: -10px;
+          content: " ";
+          left: 0;
+          position: relative;
+          right: 0;
+        }
+
+
+        /*mobile view*/
+        @media only screen and (max-width: 600px) {
+            .over-text-cover-img {
+                display: none;
+            }
+        }
+
+
+
         </style>
     </head>
     <body>
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <div class="container">
+            <div class="container">
             <a class="navbar-brand" href="#">Hackathon4Everyone</a>
             <button class="btn btn-info btn-sm" id="profile" style="display: none;">
                 <span id="userName"></span><i class="fas fa-user"></i>
@@ -256,12 +287,39 @@
         </nav>
         <div class="container" style="margin-top: 2%">
             <!-- http://getwallpapers.com/wallpaper/full/3/7/5/1521426-full-size-geometry-wallpapers-1920x1080-for-android-50.jpg -->
-            <div class="card mb-3">
+            <!-- <div class="card mb-10">
               <img class="card-img-top" src="http://getwallpapers.com/wallpaper/full/3/7/5/1521426-full-size-geometry-wallpapers-1920x1080-for-android-50.jpg" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div> -->
+
+            <div class="card bg-white text-white">
+              <img class="card-img" src="{{ asset('img/cover-com.jpg') }}" alt="Card image" id="cover-img">
+              <div class="card-img-overlay">
+                <div class="over-text-cover-img">
+                    <h5 class="card-title" >Challanges for you</h5>
+                    <p class="card-text">Identify videos with facial or voice manipulations</p>
+                    <p class="card-text"><i class="fas fa-laptop-code"></i> &nbsp; Be ready and take this Break Down Challenge 2020 teams 6 days to go</p>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+                  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+                </div>
+
               </div>
             </div>
         </div>
@@ -269,6 +327,15 @@
         <script type="text/javascript" src="{{ asset('js/jquery.cookie.min.js') }}"></script>
 
         <script type="text/javascript">
+        // window.onload = function() {
+        //     if (window.jQuery) {  
+        //         // jQuery is loaded  
+        //         alert("Yeah!");
+        //     } else {
+        //         // jQuery is not loaded
+        //         alert("Doesn't Work");
+        //     }
+        // }
         $(function($) {
           function displayMessage(msg) {
             // $('#message').html(msg).css({color: 'green'});

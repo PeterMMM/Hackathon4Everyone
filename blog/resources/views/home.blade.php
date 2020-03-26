@@ -120,21 +120,21 @@
             </ol>
             <div class="carousel-inner" role="listbox">
               <!-- Slide One - Set the background image for this slide in the line below -->
-              <div class="carousel-item active" style="background-image: url('http://getwallpapers.com/wallpaper/full/3/4/f/194107.jpg')">
+              <div class="carousel-item active" style="background-image: url('{{ asset('img/cover-home3.jpg')  }}')">
                 <div class="carousel-caption d-none d-md-block">
                   <h3 class="display-4">Are you serious on Challenges!!</h3>
                   <p class="lead">Welcome to Challenges!!</p>
                 </div>
               </div>
               <!-- Slide Two - Set the background image for this slide in the line below -->
-              <div class="carousel-item" style="background-image: url('http://getwallpapers.com/wallpaper/full/3/5/7/170948.jpg')">
+              <div class="carousel-item" style="background-image: url('{{ asset('img/cover-home2.jpg')  }}')">
                 <div class="carousel-caption d-none d-md-block">
                   <h3 class="display-4">Are you ready!</h3>
                   <p class="lead">Here is hackathon for you.</p>
                 </div>
               </div>
               <!-- Slide Three - Set the background image for this slide in the line below -->
-              <div class="carousel-item" style="background-image: url('http://getwallpapers.com/wallpaper/full/d/f/9/90066.jpg')">
+              <div class="carousel-item" style="background-image: url('{{ asset('img/cover-home1.jpg')  }}')">
                 <div class="carousel-caption d-none d-md-block">
                   <h3 class="display-4">Let start now</h3>
                   <p class="lead">Here is problem for you..</p>

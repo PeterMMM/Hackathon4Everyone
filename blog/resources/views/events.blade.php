@@ -18,7 +18,7 @@
         @import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
 
         html,body{
-            background-image: url('http://getwallpapers.com/wallpaper/full/d/1/8/35717.jpg');
+            background-image: url({{ asset('img/cover-events.jpg') }});
             background-size: cover;
             background-repeat: repeat;
             height: 100%;
@@ -29,6 +29,7 @@
             padding: 60px 0px;
             background-color: rgb(220, 220, 220);
         }
+
         
         .event-list {
             list-style: none;
@@ -214,7 +215,6 @@
                 padding: 10px 0px 9px;
             }
         }
-
         </style>
     </head>
     <body>
@@ -258,17 +258,21 @@
             <div class="row">
                 <div class="[ col-xs-12 col-sm-offset-2 col-sm-8 ]">
                     <ul class="event-list">
-                        <li>
+                        <li class="event-items" style=" display: none;" >
                             <time datetime="2014-07-20">
                                 <span class="day">4</span>
                                 <span class="month">Jul</span>
                                 <span class="year">2014</span>
                                 <span class="time">ALL DAY</span>
                             </time>
-                            <img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />
+                            <img alt="Independence Day" src="{{ asset('img/sm-pic2.jpg') }}" />
                             <div class="info">
                                 <h2 class="title">Independence Day</h2>
-                                <p class="desc">United States Holiday</p>
+                                <p class="desc">United States Holiday <br>
+                                    <a href="/detail/" style="text-decoration: none;">
+                                        View Detail
+                                    </a>
+                                </p>
                             </div>
                             <div class="social">
                                 <ul>
@@ -279,16 +283,21 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li class="event-items" style=" display: none;"  >
                             <time datetime="2014-07-20 0000">
                                 <span class="day">8</span>
                                 <span class="month">Jul</span>
                                 <span class="year">2014</span>
                                 <span class="time">12:00 AM</span>
-                            </time>
+                            </time> 
+                            <img alt="Independence Day" src="{{ asset('img/sm-pic2.jpg') }}" />
                             <div class="info">
                                 <h2 class="title">One Piece Unlimited World Red</h2>
-                                <p class="desc">PS Vita</p>
+                                <p class="desc">United States Holiday <br>
+                                    <a href="/detail/" style="text-decoration: none;">
+                                        View Detail
+                                    </a>
+                                </p>
                                 <ul>
                                     <li style="width:50%;"><a href="#website"><span class="fa fa-globe"></span> Website</a></li>
                                     <li style="width:50%;"><span class="fa fa-money"></span> $39.99</li>
@@ -303,17 +312,21 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li class="event-items" style=" display: none;" >
                             <time datetime="2014-07-20 2000">
                                 <span class="day">20</span>
                                 <span class="month">Jan</span>
                                 <span class="year">2014</span>
                                 <span class="time">8:00 PM</span>
                             </time>
-                            <img alt="My 24th Birthday!" src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg" />
+                            <img alt="My 24th Birthday!" src="{{ asset('img/sm-pic1.jpg') }}" />
                             <div class="info">
                                 <h2 class="title">Mouse0270's 24th Birthday!</h2>
-                                <p class="desc">Bar Hopping in Erie, Pa.</p>
+                                <p class="desc">United States Holiday <br>
+                                    <a href="/detail/" style="text-decoration: none;">
+                                        View Detail
+                                    </a>
+                                </p>
                                 <ul>
                                     <li style="width:33%;">1 <span class="glyphicon glyphicon-ok"></span></li>
                                     <li style="width:34%;">3 <span class="fa fa-question"></span></li>
@@ -329,17 +342,21 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li class="event-items" style=" display: none;" >
                             <time datetime="2014-07-31 1600">
                                 <span class="day">31</span>
                                 <span class="month">Jan</span>
                                 <span class="year">2014</span>
                                 <span class="time">4:00 PM</span>
                             </time>
-                            <img alt="Disney Junior Live On Tour!" src="https://farm5.staticflickr.com/4150/5045502202_1d867c8a41_q.jpg" />
+                            <img alt="Disney Junior Live On Tour!" src="{{ asset('img/sm-pic1.jpg') }}" />
                             <div class="info">
                                 <h2 class="title">Disney Junior Live On Tour!</h2>
-                                <p class="desc"> Pirate and Princess Adventure</p>
+                                <p class="desc">United States Holiday <br>
+                                    <a href="/detail/" style="text-decoration: none;">
+                                        View Detail
+                                    </a>
+                                </p>
                                 <ul>
                                     <li style="width:33%;">$49.99 <span class="fa fa-male"></span></li>
                                     <li style="width:34%;">$29.99 <span class="fa fa-child"></span></li>
@@ -416,12 +433,18 @@
             $("#logout").show(1000);
             $("#login").hide();
             $('#userName').html($.cookie('username'));
-            $('#profile').show();
+            $('#profile').show(1000);
+            $( '.event-items' ).show(1000);
+            
         } else {
             $("#login").show(1000);
             $("#logout").hide();
             $('#profile').hide();
+            $( '.event-items' ).show(1000);
+            
         }
+
+
         </script>
 
 
