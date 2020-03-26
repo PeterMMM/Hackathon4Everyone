@@ -370,7 +370,7 @@
                             <div class="col-2 collapse show d-md-flex bg-light pt-2 pl-0 min-vh-100" id="sidebar">
                                 <ul class="nav flex-column flex-nowrap overflow-hidden">
                                     <li class="nav-item">
-                                        <a class="nav-link text-truncate" href="#"><i class="fa fa-home"></i> <span class="d-none d-sm-inline">Description</span></a>
+                                        <a class="nav-link text-truncate" href="#"><i class="fa fa-home"></i></i> <span class="d-none d-sm-inline">Description</span></a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link text-truncate" href="#"><i class="fa fa-list"></i> <span class="d-none d-sm-inline">Timeline</span></a>
@@ -379,7 +379,7 @@
                                         <a class="nav-link text-truncate" href="#"><i class="fa fa-list"></i> <span class="d-none d-sm-inline">Prize</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1"><i class="fa fa-table"></i> <span class="d-none d-sm-inline">Data</span></a>
+                                        <a class="nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" data-target="#submenu1"><i class="fa fa-table"></i> <span class="d-none d-sm-inline">Data</span>    &nbsp;<i class="fas fa-arrow-down"></i></a>
                                         <div class="collapse" id="submenu1" aria-expanded="false">
                                             <ul class="flex-column pl-2 nav">
                                                 <li class="nav-item"><a class="nav-link py-0" href="#"><span>Orders</span></a></li>
